@@ -7,22 +7,22 @@ namespace HashTableAndBinaryTree
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            string sentence = "To be or not to be";
-            MyHashMap myHashMap = new MyHashMap();
+            string sentence = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+            MyLinkedHashMap myLinkedHashMap = new MyLinkedHashMap();
             string[] words = sentence.ToLower().Split(" ");
             foreach (string word in words)
             {
-                int value = myHashMap.get(word);
+                int value = myLinkedHashMap.get(word);
                 if (value == 0) value = 1;
                 else value = value + 1;
-                myHashMap.add(word, value);
+                myLinkedHashMap.add(word, value);
             }
 
+            myLinkedHashMap.remove("avoidable");
 
-            int frequency = myHashMap.get("or");
+            int frequency = myLinkedHashMap.get("avoidable");
+
             Console.WriteLine(frequency);
-            Console.WriteLine(myHashMap);
         }
     }
 }

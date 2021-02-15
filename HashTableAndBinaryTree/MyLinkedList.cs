@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HashTableAndBinaryTree
 {
-    class MyLinkedList
+    public class MyLinkedList
     {
 		public MyMapNode head;
 		public MyMapNode tail;
@@ -95,6 +95,13 @@ namespace HashTableAndBinaryTree
 			tempNode = tail.getNext();
 			tempNode = null;
 			return tempNode;
+		}
+
+		public MyMapNode delete()
+		{
+			MyMapNode tempNode1 = head;
+			this.tail = tempNode1;
+			return tail;
 		}
 
 		public void printMyNodes()
