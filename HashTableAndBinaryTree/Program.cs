@@ -7,7 +7,7 @@ namespace HashTableAndBinaryTree
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            string sentence = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+            string sentence = "Paranoids are not paranoid they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
             MyLinkedHashMap myLinkedHashMap = new MyLinkedHashMap();
             string[] words = sentence.ToLower().Split(" ");
             foreach (string word in words)
@@ -17,9 +17,7 @@ namespace HashTableAndBinaryTree
                 else value = value + 1;
                 myLinkedHashMap.add(word, value);
             }
-
             myLinkedHashMap.remove("avoidable");
-
             int frequency = myLinkedHashMap.get("avoidable");
 
             Console.WriteLine(frequency);
