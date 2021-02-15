@@ -122,6 +122,7 @@ namespace NUnitTestProject1
         [Test]
         public void Given13Numbers_AbilityToSearchElement_ShouldPassTest()
         {
+
             MyBinaryTree<int> myBinaryTree = new MyBinaryTree<int>();
             myBinaryTree.add(56);
             myBinaryTree.add(30);
