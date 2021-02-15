@@ -19,6 +19,7 @@ namespace HashTableAndBinaryTree
                 myHashMap.add(word, value);
             }
 
+
             int frequency = myHashMap.get("or");
             Console.WriteLine(frequency);
             Console.WriteLine(myHashMap);
