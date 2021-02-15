@@ -89,5 +89,31 @@ namespace NUnitTestProject1
             int size = myBinaryTree.getSize();
             Assert.AreEqual(3, size);
         }
-    }
+
+        /// <summary>
+        /// TC-4 Test to check size of 13 element Binary Tree
+        /// </summary>
+        [Test]
+        public void Given13Numbers_WhenAddedToBinaryTree_ShouldReturnSize13()
+        {
+            MyBinaryTree<int> myBinaryTree = new MyBinaryTree<int>();
+            myBinaryTree.add(56);
+            myBinaryTree.add(30);
+            myBinaryTree.add(70);
+            myBinaryTree.add(22);
+            myBinaryTree.add(40);
+            myBinaryTree.add(11);
+            myBinaryTree.add(3);
+            myBinaryTree.add(16);
+            myBinaryTree.add(60);
+            myBinaryTree.add(95);
+            myBinaryTree.add(65);
+            myBinaryTree.add(63);
+            myBinaryTree.add(67);
+
+            int size = myBinaryTree.getSize();
+            Assert.AreEqual(13, size);
+
+        }
+    } 
 }
