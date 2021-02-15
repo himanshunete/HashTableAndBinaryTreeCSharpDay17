@@ -24,6 +24,7 @@ namespace HashTableAndBinaryTree
 
             Console.WriteLine(frequency);
 
+
             //Binary Tree
             MyBinaryTree<int> myBinaryTree = new MyBinaryTree<int>();
             myBinaryTree.add(56);
